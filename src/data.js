@@ -1,4 +1,3 @@
-// estas funciones son de ejemplo
 import data from './data/pokemon/pokemon.js';
 
 export function listarPokemon(region) {
