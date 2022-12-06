@@ -11,7 +11,7 @@
 
 ## 1. Definición del Proyecto
 
-Nuestro sitio web es una página pensada para los fans de Pokemón, quienes encontrarán información de los Pokemon que pueden usar para revisar antes de jugar batallas en el juego Pokemon Go y de esta forma hacer estrategias en sus combates luego de posiblemente ver las debilidades y fortalezas de los Pokemones en la presente Pagina Web; Adicionalmente encuentran información importante en cuanto a datos generales y cantidad de caramelos que requiere el Pokemon para evolucionar que también pueden ayudar en su juego de Pokémon GO.
+Nuestro sitio web es una página pensada para los fans de Pokemón, quienes encontrarán información de los Pokemon que pueden usar para revisar antes de jugar batallas en el juego Pokemon Go y de esta forma hacer estrategias en sus combates luego de posiblemente ver las debilidades y fortalezas de los Pokémon en la presente Pagina Web; Adicionalmente encuentran información importante en cuanto a datos generales y cantidad de caramelos que requiere el Pokemon para evolucionar que también pueden ayudar en su juego de Pokémon GO.
 
 ## Imagen final de la Página Web:
 
@@ -33,7 +33,7 @@ Conocer más a fondo la información de los Pokémon, pues nunca basta con lo qu
 
 ## 2.3 ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
 
-Se espera visualizar los 251 Pokemones separados por regiones Kanto y Johto, con la información detallada de cada uno, usar filtros que le permitan encontrar con mayor facilidad lo que desea ver, porque son usuarios que buscan de manera rápida la información tal vez con la posibilidad de ganar sus batallas en los Gimnasios Pokémon hablando del juego, o porque simplemente el usuario nuevo quiere informarse de forma práctica y visual sobre esta Guía de Pokémon Máster.
+Se espera visualizar los 251 Pokémon separados por regiones Kanto y Johto, con la información detallada de cada uno, usar filtros que le permitan encontrar con mayor facilidad lo que desea ver, porque son usuarios que buscan de manera rápida la información tal vez con la posibilidad de ganar sus batallas en los Gimnasios Pokémon hablando del juego, o porque simplemente el usuario nuevo quiere informarse de forma práctica y visual sobre esta Guía de Pokémon Máster.
 
 
 ## 2.4 ¿Cuándo utilizan o utilizarían el producto?
@@ -83,15 +83,15 @@ Que esté desplegada en Github Pages.<br>
 ## Historia Dos
 
 * Cómo: Fan de Pokémon.
-* Quiero: Ver la lista de Pokemones.
-* Para: Saber cuales Pokemones están disponibles en las Regiones de Kanto y Johto.
+* Quiero: Ver la lista de Pokémon.
+* Para: Saber cuales Pokémon están disponibles en las Regiones de Kanto y Johto.
 * Criterios de Aceptación:<br>
 Ser responsive<br>
-Mostrar Pokemones enlistados en tarjetas, en columnas de cuatro, con foto, nombre, número de Pokédex y tipo.<br>
+Mostrar Pokémon enlistados en tarjetas, en columnas de cuatro, con foto, nombre, número de Pokédex y tipo.<br>
 Que sea Scroll<br>
 Que cumpla con el diseño de alta fidelidad.<br>
 * Definición de Terminado:<br>
-Que se vea la lista de pokemones en tarjetas, en columnas de a 4.<br>
+Que se vea la lista de pokémon en tarjetas, en columnas de a 4.<br>
 Cargar el código al repositorio de Github.<br>
 Cumplir los criterios de aceptación.<br>
 Desplegar en Github Pages.<br>
@@ -102,7 +102,7 @@ Contar con pruebas unitarias.<br>
 
 * Cómo: Fan de Pokémon
 * Quiero: Usar los filtros de Ordenar por y filtro de Tipo.
-* Para: Facilitar la búsqueda de los Pokemones.
+* Para: Facilitar la búsqueda de los Pokémon.
 * Criterios de Aceptación:<br>
 Que se pueda ordenar de la A-Z, Z-A<br>
 Que se vea ordenado por # ascendente y por # descendente <br>
@@ -122,8 +122,8 @@ Contar con pruebas unitarias.<br>
 * Quiero: Usar los filtros de Resistencia y Debilidad
 * Para: Conocer cada Pokémon según sus resistencias y Debilidades
 * Criterios de Aceptación:<br>
-Que se pueda filtrar por Resistencias y muestre enlistados los pokemones en tarjetas por columnas de a 4.<br>
-Que se pueda filtrar por Debilidades y muestre enlistados los pokemones en tarjetas por columnas de a 4.<br>
+Que se pueda filtrar por Resistencias y muestre enlistados los pokémon en tarjetas por columnas de a 4.<br>
+Que se pueda filtrar por Debilidades y muestre enlistados los pokémon en tarjetas por columnas de a 4.<br>
 Que sea Scroll<br>
 Que sea responsive<br>
 * Definición de Terminado:<br>

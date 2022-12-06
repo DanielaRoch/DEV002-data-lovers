@@ -58,23 +58,26 @@ botonBorrarFiltros.addEventListener('click',() => {
 })
 
 
+
 headerViewTwo.style.display = 'none';
 let filtrados;
 let regiones;
 
 // Por cada pokemon añade el return 
 let pokemon = (nombre, numero, tipo, imagen) => {
-  return `<div class="contenedor" onclick>
-    <div class="pokemon" class="frente" >
+  return `<div class="contenedor">
+    <div class="pokemon">
       <img src="${imagen}" class="imagen" />
       <div class="contenido">
         <h4>${nombre}</h4>
         <h4>#${numero}</h4>
         <h5>${tipo}</h5>
-      </div>
+      </div>      
     </div>
   </div>`
 }
+
+
 
 let pintarLista = () => {
   // Limpia la lista de pokemoms
@@ -86,3 +89,15 @@ let pintarLista = () => {
     divLista.innerHTML += pokemon(element.name, element.num, element.type, element.img)
   }
 }
+
+let tarjetas = document.getElementsByClassName("contenedor")
+  console.log(tarjetas)
+tarjetas.forEach(card => {
+  console.log(card)
+  card.addEventListener("click", () => { 
+  
+    console.log("se hace click")
+  }) 
+
+  
+});

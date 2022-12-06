@@ -8,47 +8,49 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2? family=Nerko+One&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
 <body>
-  <!--Primera Pantalla-->
-  <div class="divViewHeaderOne">
-    <header class="Titulo">
-      <h1> <img class="nombre" src="data/pokemon/Imagenes/Titulo.png"></h1>
-      <h2> <img class="pokebola1" src="data/pokemon/Imagenes/Pokeball.png"></h2>
-      <h3> <img class="pokebola2" src="data/pokemon/Imagenes/Pokeball.png"></h3>
-    </header>
-    <section class="datoscuriosos">
-      <img class="titulo2" src="data/pokemon/Imagenes/datoscuriosos.png">
-      <div class="fondocaja1 text-white">
-        <div class="fondocaja2">
-          <ul>
-            <li>La primera emisión de la seríe original de Pokémon fue el 1ro de abril de 1997 </li> <br>
-            <li>El 11 de noviembre de 2022 se conoció que Ash Ketchum, tras más de 25 años de aventuras, al fin
-              consiguió
-              su sueño de coronarse como campeón del mundo y llevarse el título de 'Maestro Pokémon'</li> <br>
-            <li>Ni Charmander, ni Squirtle, ni Bulbasaur. El primer Pokémon creado al desarrollar el código los primeros
-              juegos fue Rhydon, y de hecho su número interno dentro de la primera generación es 001.</li>
-          </ul>
-          <img class="pokemones" src="data/pokemon/Imagenes/datos curiosos.png">
-          <div>
-            <li>
-            </li>
-            <img class="ubi1" src="data/pokemon/Imagenes/R (2).png">
-            <input type="button" value="Región Kanto" class="kanto text-white font-size" id="bKanto">
-            <img class="ubi2" src="data/pokemon/Imagenes/R (2).png">
-            <input type="button" value="Región Johto" class="johto text-white font-size" id="bJohto">
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="contenedor1">
+    <!--Primera Pantalla-->
+    <div class="divViewHeaderOne">
+      <header class="Titulo">
+        <h2> <img class="pokebola1" src="data/pokemon/Imagenes/Pokeball.png"></h2>
+        <h1> <img class="nombre" src="data/pokemon/Imagenes/Titulo.png"></h1>
+        <h3> <img class="pokebola2" src="data/pokemon/Imagenes/Pokeball.png"></h3>
+      </header>
+      <section class="datoscuriosos">
+        <img class="titulo2" src="data/pokemon/Imagenes/datoscuriosos.png">
+        <div class="fondocaja1 text-white">
+          <div class="fondocaja2">
+            <ul>
+              <li>La primera emisión de la seríe original de Pokémon fue el 1ro de abril de 1997 </li> <br>
+              <li>El 11 de noviembre de 2022 se conoció que Ash Ketchum, tras más de 25 años de aventuras, al fin
+                consiguió
+                su sueño de coronarse como campeón del mundo y llevarse el título de 'Maestro Pokémon'</li> <br>
+              <li>Ni Charmander, ni Squirtle, ni Bulbasaur. El primer Pokémon creado al desarrollar el código de los
+                primeros
+                juegos fue Rhydon, y de hecho su número interno dentro de la primera generación es 001.</li>
+            </ul>
+            <img class="pokemones" src="data/pokemon/Imagenes/datos curiosos.png">
+            <div>
+              <li>
+              </li>
+      </section>
+      <section>
+        <img class="ubi1" src="data/pokemon/Imagenes/R (2).png">
+        <input type="button" value="Región Kanto" class="kanto text-white font-size" id="bKanto">
+        <img class="ubi2" src="data/pokemon/Imagenes/R (2).png">
+        <input type="button" value="Región Johto" class="johto text-white font-size" id="bJohto">
+    </div>
   </div>
-
+  </div>
+  </section>
+  </div>
   <!--Segunda Pantalla-->
-
-<div class="divViewHeaderTwo">
-   
+  <div class="divViewHeaderTwo">
     <header class="Filtros">
       <div class="Ordenar">
         <select name="selectOption" id="botonOrdenarPor">
@@ -59,9 +61,6 @@
           <option value="numDes"># DESC - # ASC</option>
         </select>
       </div>
-
-
-
       <div class="Tipo">
         <select name="selectTipe" id="botonTipo">
           <option value="defaultTipe" selected>Tipo</option>
@@ -132,19 +131,13 @@
         </select>
       </div>
     </header>
-
     <input type="button" value="Volver" class="volver" onclick="location.reload()" />
-    <input type="button" value="Borrar Filtros" class="refrescar" name="borrar filtros" id="borrarFiltros"/>
-
+    <input type="button" value="Borrar Filtros" class="refrescar" name="borrar filtros" id="borrarFiltros" />
     <div id="listaPokemon"></div>
-  
   </div>
-
-
-
-
   <div id="root"></div>
   <script src="main.js" type="module"></script>
+  </div>
 </body>
 
 </html>
