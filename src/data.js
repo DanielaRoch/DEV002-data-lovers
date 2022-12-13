@@ -30,6 +30,23 @@ export function debilidades(seleccion, filtrados) {
 export function resistencia(seleccion, filtrados) {
   return filtrados.filter(p => p.resistant.includes(seleccion));
 }
+
+export function datagrafica(){
+  let tipos = [{}];
+  for (let index = 0; index < data.pokemon.length; index++) {
+    const cadaPokemon = data.pokemon[index];
+    for (let index = 0; index < cadaPokemon.type.length; index++) {
+      const pomkemonType = cadaPokemon.type[index];
+      let temporal = tipos.filter(t => t.type === pomkemonType);
+      if (temporal.length === 0) {
+        tipos.push({type: pomkemonType, cantidad: 1});
+      } else {
+        tipos[tipos.indexOf(temporal[0])].cantidad += 1;
+      } 
+    }
+  }
+  return tipos;
+}
   
 
 
