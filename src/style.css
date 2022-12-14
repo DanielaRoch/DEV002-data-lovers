@@ -8,11 +8,13 @@ body {
     background-image: url(data/pokemon/Imagenes/Fondo.jpeg);
     width: 100%;
     font-family: 'Nerko One', cursive;
+    
 }
+
 /** ----- Primera Pantalla  ----- **/
 /** ---- Header ---- **/
 
-.Titulo{
+.Titulo {
     display: flex;
     background: #1C0F6A;
     justify-content: center;
@@ -21,43 +23,50 @@ body {
     padding: 1vh;
     align-items: center;
     column-gap: 10vh;
-    margin-block-end: 5vh;  
+    margin-block-end: 5vh;
+    border: 3px solid red;
+    
+
 }
 
-.pokebola1{
+.pokebola1 {
     width: 10vh;
 }
 
-.nombretitulo{
+.nombretitulo {
     width: 50vh;
 }
 
-.pokebola2{
-    width: 10vh;  
+.pokebola2 {
+    width: 10vh;
 }
 
 /** --Medidas para celulares maximo 576px-- **/
 
-@media only screen (max-width: 575.98px){
+@media screen and  (min-width: 414px) {
     .Titulo {
-        width: 80vh;
+        width: 150vh;
     }
-    .pokebola1 {
-        width: 5vh;
-    }
-    .nombretitulo{
-        width: 25vh;
-    }
-    .pokebola2 {
-        width: 5vh;
-    }
+
+     
 }
 
+/**@media only screen and (max-width: 1024px) { 
+    .Titulo {
+        width: 150vh;
+    }
+
     
+ }**/
+
+
+
+
+
 
 /** ---- Sección Datos Curiosos ---- **/
 
-.datoscuriosos{
+.datoscuriosos {
     display: flex;
     background: #1C0F6A;
     width: 50vh;
@@ -69,11 +78,11 @@ body {
     border-radius: 2vh;
 }
 
-.titulodatos{
+.titulodatos {
     width: 40vh;
 }
 
-.caja1{
+.caja1 {
     display: flex;
     width: 65vh;
     height: 60vh;
@@ -83,38 +92,40 @@ body {
     border-radius: 2vh;
 }
 
-.caja2{
+.caja2 {
     display: flex;
     width: 55vh;
     height: 50vh;
     flex-direction: column;
     align-items: center;
-    background:#1C0F6A;
+    background: #1C0F6A;
     padding: 5vh;
     border-radius: 2vh;
     text-align: justify;
 }
 
-.text-white{
+.text-white {
     color: white;
 }
 
-.text-size{
+.text-size {
     font-size: 2vh;
 }
-.pokemones{
+
+.pokemones {
     width: 35vh;
     height: 10vh;
 }
 
-@media only screen (max-width: 575.98px) {
+@media (max-width:  575.98px) {
     .datoscuriosos {
         display: none;
+        
     }
 }
 
 /** ---- Botones Regiones ---- **/
-.botones{
+.botones {
     display: flex;
     margin-left: 100vh;
     margin-block-end: 5vh;
@@ -122,35 +133,37 @@ body {
     justify-content: space-around;
 }
 
-.kanto{
+.kanto {
     width: 30vh;
     height: 10vh;
     background: #EAB80A;
     border-radius: 10vh;
     cursor: pointer;
     font-family: 'Nerko One', cursive;
+    box-sizing: border-box;
 }
 
-.kanto:hover{
+.kanto:hover {
     transform: scale(1.05);
 }
 
-.johto{
+.johto {
     width: 30vh;
     height: 10vh;
     background: #1C0F6A;
     border-radius: 10vh;
     cursor: pointer;
     font-family: 'Nerko One', cursive;
+    box-sizing: border-box;
 }
 
-.johto:hover{
+.johto:hover {
     transform: scale(1.05);
 }
 
 
 /** ---- Gráfica ---- **/
-.grafica{
+.grafica {
     display: flex;
     margin-left: 100vh;
 }
@@ -167,15 +180,81 @@ body {
 
 /** ---- Footer ----**/
 
-.footer{
+.footer {
     width: 100%;
     height: 5vh;
     line-height: 2rem;
     text-align: center;
-    background:#1C0F6A;
+    background: #1C0F6A;
     position: fixed;
     bottom: 0;
 }
 
+/**---- Segunda Pantalla----**/
+
+.Filtros{
+    display: flex;
+    background: #1C0F6A;
+    justify-content: space-around;
+    width: 100vw;
+    height: 10vh;
+    padding: 3vh;
+    column-gap: 10vh;
+    box-sizing: border-box;
+
+}
+
+.Ordenar{
+    width: 100vh;
+    
+}
+
+.Tipo{
+    width: 100vh;
+}
+
+.Debilidades{
+    width: 100vh;
+}
+
+.Resistencia{
+    width: 100vh;
+   border-radius: 10px;
+}
+
+/**----cards----**/
+
+.contenedor{
+    
+    float: left;
+    width: 200px;
+    padding: 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #ea9f14;
+    margin: 10px;
+}
+ 
+.pokemon{
+    border-radius: 4px;
+    width: 130px;
+    height: 194px;
+    object-fit: contain;
+    
+}
 
 
+
+
+.volver{
+    background-color: red;
+}
+.refrescar{
+    background-color: red;
+    width: 120px;
+    height: 40px;
+    left: 1310px;
+    top: 238px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.35);
+}

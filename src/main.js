@@ -72,12 +72,12 @@ let pokemon = (nombre, numero, tipo, imagen) => {
   return `<div class="contenedor">
     <div class="pokemon">
       <img src="${imagen}" class="imagen" />
+    </div>
       <div class="contenido">
         <h4>${nombre}</h4>
         <h4>#${numero}</h4>
         <h5>${tipo}</h5>
       </div>      
-    </div>
   </div>`;
 };
 
