@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pokémon Máster</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2? family=Nerko+One&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+  <main>
+    <!--Primera Pantalla-->
+    <section class="divViewHeaderOne">
+      <header class="Titulo">
+        <div> <img class="pokebola1" src="data/pokemon/Imagenes/Pokeball.png"></div>
+        <div> <img class="nombretitulo" src="data/pokemon/Imagenes/Titulo.png"></div>
+        <div> <img class="pokebola2" src="data/pokemon/Imagenes/Pokeball.png"></div>
+      </header>
+      <div class="contenedorDatos">
+        <section class="datoscuriosos">
+          <div>
+            <img class="titulodatos" src="data/pokemon/Imagenes/datoscuriosos.png">
+          </div>
+          <div class="caja1">
+            <div class="caja2 text-white text-size">
+              <li>La primera emisión de la seríe original de Pokémon fue el 1ro de abril de 1997 </li><br />
+              <li>El 11 de noviembre de 2022 se conoció que Ash Ketchum, tras más de 25 años de aventuras, al fin
+                consiguió su sueño de coronarse como campeón del mundo y llevarse el título de 'Maestro Pokémon'</li>
+              <br />
+              <li>Ni Charmander, ni Squirtle, ni Bulbasaur. El primer Pokémon creado al desarrollar el código de los
+                primeros juegos fue Rhydon, y de hecho su número interno dentro de la primera generación es 001.</li>
+              <br />
+            </div>
+            <div>
+              <img class="pokemones" src="data/pokemon/Imagenes/datos curiosos.png">
+            </div>
+          </div>
+        </section>
+        <section class="contenedorBotones">
+          <div class="botones">
+            <div>
+              <button type="button" class="kanto text-white text-size" id="bKanto">REGIÓN KANTO</button>
+            </div>
+            <div>
+              <button type="button" class="johto text-white text-size " id="bJohto">REGIÓN JOHTO</button>
+            </div>
+          </div>
+          <div class="grafica">
+            <canvas id="myChart" class="myChart"></canvas>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!--Segunda Pantalla-->
+    <div class="divViewHeaderTwo">
+      <header class="Filtros">
+        <div class="Ordenar ">
+          <select class="opciones" name="selectOption" id="botonOrdenarPor">
+            <option value="defaultOption" selected>Ordenar por</option>
+            <option value="aZOrder">A - Z</option>
+            <option value="zAOrder">Z - A</option>
+            <option value="numAsc"># ASC - # DESC</option>
+            <option value="numDes"># DESC - # ASC</option>
+          </select>
+        </div>
+        <div class="Tipo ">
+          <select name="selectTipe" id="botonTipo" class="opciones">
+            <option value="defaultTipe" selected>Tipo</option>
+            <option value="steel">Acero</option>
+            <option value="water">Agua</option>
+            <option value="bug">Bicho</option>
+            <option value="dragon">Dragón</option>
+            <option value="electric">Eléctrico</option>
+            <option value="ghost">Fantasma</option>
+            <option value="fire">Fuego</option>
+            <option value="fairy">Hada</option>
+            <option value="ice">Hielo</option>
+            <option value="fighting">Lucha</option>
+            <option value="normal">Normal</option>
+            <option value="grass">Planta</option>
+            <option value="psychic">Psíquico</option>
+            <option value="rock">Roca</option>
+            <option value="dark">Siniestro</option>
+            <option value="ground">Tierra</option>
+            <option value="poison">Veneno</option>
+            <option value="flying">Volador</option>
+          </select>
+        </div>
+        <div class="Debilidades">
+          <select class="opciones" name="selectDeb" id="botonDebilidades">
+            <option value="defaultDeb" selected>Debilidades</option>
+            <option value="steel">Acero</option>
+            <option value="water">Agua</option>
+            <option value="bug">Bicho</option>
+            <option value="dragon">Dragón</option>
+            <option value="electric">Eléctrico</option>
+            <option value="ghost">Fantasma</option>
+            <option value="fire">Fuego</option>
+            <option value="fairy">Hada</option>
+            <option value="ice">Hielo</option>
+            <option value="fighting">Lucha</option>
+            <option value="normal">Normal</option>
+            <option value="grass">Planta</option>
+            <option value="psychic">Psíquico</option>
+            <option value="rock">Roca</option>
+            <option value="dark">Siniestro</option>
+            <option value="ground">Tierra</option>
+            <option value="poison">Veneno</option>
+            <option value="flying">Volador</option>
+          </select>
+        </div>
+        <div class="Resistencia ">
+          <select class="opciones" name="selectRes" id="botonResistencia">
+            <option value="defaultRes" selected>Resistencia</option>
+            <option value="steel">Acero</option>
+            <option value="water">Agua</option>
+            <option value="bug">Bicho</option>
+            <option value="dragon">Dragón</option>
+            <option value="electric">Eléctrico</option>
+            <option value="ghost">Fantasma</option>
+            <option value="fire">Fuego</option>
+            <option value="fairy">Hada</option>
+            <option value="ice">Hielo</option>
+            <option value="fighting">Lucha</option>
+            <option value="normal">Normal</option>
+            <option value="grass">Planta</option>
+            <option value="psychic">Psíquico</option>
+            <option value="rock">Roca</option>
+            <option value="dark">Siniestro</option>
+            <option value="ground">Tierra</option>
+            <option value="poison">Veneno</option>
+            <option value="flying">Volador</option>
+          </select>
+        </div>
+        <div class="Contenedorvolver">
+          <a href="index.html" class="volver">Volver</a>
+          <button type="button" value="Borrar Filtros" class="refrescar" name="borrar filtros"
+            id="borrarFiltros">Refrescar</button>
+        </div>
+      </header>
+      <div id="listaPokemon"></div>
+      <!-- Mostramos Pokémon en las card -->
+    </div>
+    <footer class="footer text-white">
+      <p>Copyright &copy; 2022 - Daniela Rocha and Paola Quiroga</p>
+    </footer>
+    <script src="main.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.js"></script>
+  </main>
+</body>
+
+</html>

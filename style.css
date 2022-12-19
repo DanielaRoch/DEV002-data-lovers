@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(data/pokemon/Imagenes/Fondo.jpeg);
+    width: 100%;
+    font-family: 'Nerko One', cursive;
+}
+
+main {
+    width: 100%;
+}
+
+/** ----- Primera Pantalla  ----- **/
+
+.divViewHeaderOne {
+    width: 100%;
+}
+
+.Titulo {
+    display: flex;
+    background: #1C0F6A;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    padding: 1vh;
+    align-items: center;
+    margin-block-end: 5vh;
+}
+
+.contenedorDatos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+.contenedorBotones {
+    display: flex;
+    margin-top: 7%;
+    margin-right: 10%;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+}
+
+.pokebola1 {
+    width: 10vh;
+}
+
+.nombretitulo {
+    width: 50vh;
+}
+
+.pokebola2 {
+    width: 10vh;
+}
+
+
+/** ---- Sección Datos Curiosos ---- **/
+
+.datoscuriosos {
+    display: flex;
+    background: #1C0F6A;
+    width: 30%;
+    height: max-content;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.9vh;
+    border-radius: 2vh;
+}
+
+.titulodatos {
+    width: 100%;
+}
+
+.caja1 {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+    align-items: center;
+    background: #EAB80A;
+    border-radius: 2vh;
+}
+
+.caja2 {
+    display: flex;
+    width: 80%;
+    height: max-content;
+    flex-direction: column;
+    align-items: center;
+    background: #1C0F6A;
+    padding: 5vh;
+    border-radius: 2vh;
+    text-align: justify;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-size {
+    font-size: 2vh;
+}
+
+.pokemones {
+    width: 35vh;
+    height: 10vh;
+}
+
+
+/** ---- Botones Regiones ---- **/
+
+.botones {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.kanto {
+    width: 30vh;
+    height: 10vh;
+    background: #EAB80A;
+    border-radius: 10vh;
+    cursor: pointer;
+    font-family: 'Nerko One', cursive;
+    box-sizing: border-box;
+}
+
+.kanto:hover {
+    transform: scale(1.05);
+}
+
+.johto {
+    width: 30vh;
+    height: 10vh;
+    background: #1C0F6A;
+    border-radius: 10vh;
+    cursor: pointer;
+    font-family: 'Nerko One', cursive;
+    box-sizing: border-box;
+}
+
+.johto:hover {
+    transform: scale(1.05);
+}
+
+
+/** ---- Gráfica ---- **/
+
+.grafica {
+    width: 100%;
+    display: flex;
+}
+
+.myChart {
+    width: 100%;
+    height: 80%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    background: white;
+}
+
+/** ---- Footer ----**/
+
+.footer {
+    width: 100%;
+    height: 5vh;
+    line-height: 2rem;
+    text-align: center;
+    background: #1C0F6A;
+    bottom: 0;
+}
+
+/**---- Segunda Pantalla----**/
+
+.divViewHeaderTwo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Filtros {
+    display: flex;
+    background: #1C0F6A;
+    justify-content: space-around;
+    width: 100vw;
+    height: max-content;
+    padding: 3vh;
+    column-gap: 10vh;
+    box-sizing: border-box;
+}
+
+.Ordenar {
+    width: 100vh;
+}
+
+.Tipo {
+    width: 100vh;
+}
+
+.Debilidades {
+    width: 100vh;
+}
+
+.Resistencia {
+    width: 100vh;
+}
+
+/**----Cards----**/
+
+#listaPokemon {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+    gap: 1.5rem;
+}
+
+.contenedor {
+    float: left;
+    width: 200px;
+    padding: 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #ea9f14;
+    margin: 10px;
+}
+
+.pokemon {
+    border-radius: 4px;
+    width: 130px;
+    height: 194px;
+    object-fit: contain;
+}
+
+/** ---- Botones Volver y Refrescar ---- **/
+
+.Contenedorvolver {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-right: 5%;
+}
+
+.opciones {
+    margin-left: 5%;
+    width: 60%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgb(198, 200, 233);
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Nerko One', cursive;
+}
+
+.opciones:hover {
+    background-color: #302d44;
+    color: azure;
+}
+
+.volver {
+    background-color: rgb(198, 200, 233);
+    color: black;
+    text-align: center;
+    font-family: 'Nerko One', cursive;
+    font-weight: 600;
+    width: 5rem;
+    height: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1%;
+    border: solid 2px black;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.35);
+}
+
+.volver:hover {
+    background-color: #302d44;
+    color: azure;
+}
+
+.refrescar {
+    background-color: rgb(198, 200, 233);
+    font-family: 'Nerko One', cursive;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
+    border: solid 2px black;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.35);
+}
+
+.refrescar:hover {
+    background-color: #302d44;
+    color: azure;
+}
+
+/** --Medidas para Tablet maximo 960px-- **/
+
+@media screen and (max-width: 960px) {
+
+    /* Para la primera vista */
+
+    .datoscuriosos {
+        display: none;
+    }
+
+    .contenedorDatos {
+        justify-content: center;
+    }
+
+    .grafica {
+        width: 80vh;
+    }
+
+    /* Para la segunda vista */
+
+    .divViewHeaderTwo .Filtros {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        gap: 1.5rem;
+        grid-template-rows: auto auto;
+    }
+
+    .opciones {
+        width: 20%;
+    }
+}
+
+/** --Medidas para celular maximo 480px-- **/
+
+@media screen and (max-width: 480px) {
+
+    /* Para la primera vista */
+
+    .datoscuriosos {
+        display: block;
+    }
+
+    .contenedorDatos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .datoscuriosos {
+        width: 80%;
+        height: max-content;
+    }
+
+    .contenedorBotones {
+        margin-right: 0%;
+        width: 100%;
+    }
+
+    .kanto {
+        width: 22vh;
+        height: 7vh;
+    }
+
+    .johto {
+        width: 22vh;
+        height: 7vh;
+    }
+
+    /* Para la segunda vista */
+
+    .divViewHeaderTwo .Filtros {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        gap: 2rem;
+        grid-template-rows: auto auto;
+    }
+
+    .opciones {
+        width: 15%;
+        padding: 5px;
+    }
+
+    .refrescar, .volver{
+        width: 150%;
+        font-size: 0.9rem;
+    }
+}
