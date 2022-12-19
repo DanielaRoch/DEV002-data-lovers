@@ -1,53 +1,53 @@
-import data from './data/pokemon/pokemon.js';
-
-export function listarPokemon(region) {
-  return data.pokemon.filter(p => p.generation.name === region);
+//Funcion Filtro por region//
+export function listarPokemon(region, pokemon) {
+  return pokemon.filter(p => p.generation.name === region);
 }
 
-export function ordenarPor(seleccion, filtrados) {
+//Funcion para ordenar A-Z, Z-A, #ASC, #DESC//
+export function ordenarPor(seleccion, pokemon) {
   if ("aZOrder" === seleccion) {
-    return filtrados.sort((a, b) => a.name.localeCompare(b.name));
+    return pokemon.sort((a, b) => a.name.localeCompare(b.name));
   }
   else if ("zAOrder" === seleccion) {
-    return filtrados.sort((a, b) => b.name.localeCompare(a.name));
+    return pokemon.sort((a, b) => b.name.localeCompare(a.name));
   }
   else if ("numAsc" === seleccion) {
-    return filtrados.sort((a, b) => a.num - b.num);
+    return pokemon.sort((a, b) => a.num - b.num);
   }
   else if ("numDes" === seleccion) {
-    return filtrados.sort((a, b) => b.num - a.num);
+    return pokemon.sort((a, b) => b.num - a.num);
   }
 }
 
-export function porTipo(seleccion, filtrados) {
-  return filtrados.filter(p => p.type.includes(seleccion));
+//Funcion por Tipo//
+export function porTipo(seleccion, pokemon) {
+  return pokemon.filter(p => p.type.includes(seleccion));
 }
 
-export function debilidades(seleccion, filtrados) {
-  return filtrados.filter(p => p.weaknesses.includes(seleccion));
+//Funcion por debilidades//
+export function debilidades(seleccion, pokemon) {
+  return pokemon.filter(p => p.weaknesses.includes(seleccion));
 }
 
-export function resistencia(seleccion, filtrados) {
-  return filtrados.filter(p => p.resistant.includes(seleccion));
+//Funcion por resistencias//
+export function resistencia(seleccion, pokemon) {
+  return pokemon.filter(p => p.resistant.includes(seleccion));
 }
 
-export function datagrafica(){
-  let tipos = [{}];
-  for (let index = 0; index < data.pokemon.length; index++) {
-    const cadaPokemon = data.pokemon[index];
-    for (let index = 0; index < cadaPokemon.type.length; index++) {
-      const pomkemonType = cadaPokemon.type[index];
-      let temporal = tipos.filter(t => t.type === pomkemonType);
+//Funcion para la grafica//
+export function datagrafica(pokemon){
+  let tipos = [];
+  //recorre el array de pokemon uno a uno//
+  pokemon.forEach(cadaPokemon => {
+    //recorre el array de tipo del pokemon//
+    cadaPokemon.type.forEach(pokemonType => {
+      let temporal = tipos.filter(t => t.type === pokemonType);
       if (temporal.length === 0) {
-        tipos.push({type: pomkemonType, cantidad: 1});
+        tipos.push({type: pokemonType, cantidad: 1});
       } else {
         tipos[tipos.indexOf(temporal[0])].cantidad += 1;
-      } 
-    }
-  }
+      }
+    });
+  });
   return tipos;
 }
-  
-
-
-

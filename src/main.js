@@ -6,36 +6,56 @@ import {
   resistencia,
   datagrafica,
 } from "./data.js";
+import data from './data/pokemon/pokemon.js';
 
+// Se crean constantes para manipular el DOM//
+
+//Vistas pantallas//
 const headerViewOne = document.getElementsByClassName("divViewHeaderOne")[0];
 const headerViewTwo = document.getElementsByClassName("divViewHeaderTwo")[0];
+//Botones Regiones//
 const bKanto = document.getElementById("bKanto");
 const bJohto = document.getElementById("bJohto");
+//Cards//
 const divLista = document.getElementById("listaPokemon");
+//Filtros//
 const botonOrdenarPor = document.getElementById("botonOrdenarPor");
 const botonTipo = document.getElementById("botonTipo");
 const botonDebilidades = document.getElementById("botonDebilidades");
 const botonResistencia = document.getElementById("botonResistencia");
-const botonBorrarFiltros = document.getElementById("borrarFiltros");
 const selectResistencia = document.getElementById("botonResistencia");
 const selectOrdenarPor = document.getElementById("botonOrdenarPor");
 const selectDebilidades = document.getElementById("botonDebilidades");
 const selectTipo = document.getElementById("botonTipo");
+//Refrescar//
+const botonBorrarFiltros = document.getElementById("borrarFiltros");
 
+// Ponemos vista dos como None para que no se muestre//
+headerViewTwo.style.display = "none";
+
+//Guarda Pokemon filtrados//
+let filtrados;
+
+//Guarda la region a la que se ingresa//
+let regiones;
+
+//Llamamos funcion listarPokemon para cada region//
 bKanto.addEventListener("click", () => {
   headerViewOne.style.display = "none";
   headerViewTwo.style.display = "block";
-  filtrados = listarPokemon("kanto");
+  filtrados = listarPokemon("kanto", data.pokemon);
   pintarLista();
   regiones = "kanto";
 });
 bJohto.addEventListener("click", () => {
   headerViewOne.style.display = "none";
   headerViewTwo.style.display = "block";
-  filtrados = listarPokemon("johto");
+  filtrados = listarPokemon("johto", data.pokemon);
   pintarLista();
   regiones = "johto";
 });
+
+//Llamamos funciones para los filtros//
 botonOrdenarPor.addEventListener("change", () => {
   filtrados = ordenarPor(botonOrdenarPor.value, filtrados);
   pintarLista();
@@ -52,10 +72,12 @@ botonResistencia.addEventListener("change", () => {
   filtrados = resistencia(botonResistencia.value, filtrados);
   pintarLista();
 });
+
+//Usamos el valor defaul de los filtros para Refrescarlos con el Boton borrar Filtros// 
 botonBorrarFiltros.addEventListener("click", () => {
   headerViewOne.style.display = "none";
   headerViewTwo.style.display = "block";
-  filtrados = listarPokemon(regiones);
+  filtrados = listarPokemon(regiones, data.pokemon);
   pintarLista();
   selectResistencia.value = "defaultRes";
   selectOrdenarPor.value = "defaultOption";
@@ -63,11 +85,7 @@ botonBorrarFiltros.addEventListener("click", () => {
   selectTipo.value = "defaultTipe";
 });
 
-headerViewTwo.style.display = "none";
-let filtrados;
-let regiones;
-
-// Por cada pokemon añade el return
+// Añade la Card de cada Pokemon//
 let pokemon = (nombre, numero, tipo, imagen) => {
   return `<div class="contenedor">
     <div class="pokemon">
@@ -81,12 +99,13 @@ let pokemon = (nombre, numero, tipo, imagen) => {
   </div>`;
 };
 
+//Creamos funcion flecha//
 let pintarLista = () => {
-  // Limpia la lista de pokemoms
+  //Limpia la lista de Pokemon//
   divLista.innerHTML = "";
-  // Agrega nuevamente los pokemon a la lista
+  // Agrega nuevamente los pokemon a la lista//
   for (let index = 0; index < filtrados.length; index++) {
-    //Trae cada pokemon de uno en uno = element
+    //Trae los pokemon de uno en uno = element//
     const element = filtrados[index];
     divLista.innerHTML += pokemon(
       element.name,
@@ -97,17 +116,8 @@ let pintarLista = () => {
   }
 };
 
-/*let tarjetas = document.getElementsByClassName("contenedor");
-console.log(tarjetas);
-tarjetas.forEach((card) => {
-  console.log(card);
-  card.addEventListener("click", () => {
-    console.log("se hace click");
-  });
-});*/
-
-// Grafica//
-const tipospokemon = datagrafica();
+// Gráfica//
+const tipospokemon = datagrafica(data.pokemon);
 let labelsTipos = tipospokemon.map((tipo) => {
   return tipo.type;
 });
@@ -116,16 +126,15 @@ let cantidades = tipospokemon.map((tipo) => {
 });
 
 var ctx = document.getElementById("myChart").getContext("2d");
-const myChart = new Chart(ctx, {
+export const myChart = new Chart(ctx, {
   type: "bar",
   data: {
     labels: labelsTipos,
     datasets: [
       {
-        label: "Cantidad por tipo",
+        label: "CANTIDAD DE POKÉMON POR TIPO",
         data: cantidades,
         backgroundColor: [
-          "rgb(168,168,192)",
           "rgb(120,200,80)",
           "rgb(176,88,160)",
           "rgb(240,80,48)",
@@ -139,10 +148,11 @@ const myChart = new Chart(ctx, {
           "rgb(248,112,160)",
           "rgb(184,160,88)",
           "rgb(88,200,224)",
-          " rgb(96,96,176)",
+          "rgb(96,96,176)",
           "rgb(160,80,56)",
           "rgb(231,159,231)",
           "rgb(122,88,72)",
+          "rgb(168,168,192)",
         ],
         borderWidth: 1,
       },

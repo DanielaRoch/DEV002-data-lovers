@@ -17,11 +17,11 @@
     <!--Primera Pantalla-->
     <section class="divViewHeaderOne">
       <header class="Titulo">
-        <h2> <img class="pokebola1" src="data/pokemon/Imagenes/Pokeball.png"></h2>
-        <h1> <img class="nombretitulo" src="data/pokemon/Imagenes/Titulo.png"></h1>
-        <h3> <img class="pokebola2" src="data/pokemon/Imagenes/Pokeball.png"></h3>
+        <div> <img class="pokebola1" src="data/pokemon/Imagenes/Pokeball.png"></div>
+        <div> <img class="nombretitulo" src="data/pokemon/Imagenes/Titulo.png"></div>
+        <div> <img class="pokebola2" src="data/pokemon/Imagenes/Pokeball.png"></div>
       </header>
-      <section>
+      <div class="contenedorDatos">
         <section class="datoscuriosos">
           <div>
             <img class="titulodatos" src="data/pokemon/Imagenes/datoscuriosos.png">
@@ -41,28 +41,27 @@
             </div>
           </div>
         </section>
-        <section>
-          <section class="botones">
+        <section class="contenedorBotones">
+          <div class="botones">
             <div>
               <button type="button" class="kanto text-white text-size" id="bKanto">REGIÓN KANTO</button>
             </div>
             <div>
               <button type="button" class="johto text-white text-size " id="bJohto">REGIÓN JOHTO</button>
             </div>
-          </section>
-          <section class="grafica">
-            <div class="graphic__canvas">
-              <canvas id="myChart" class="myChart"></canvas>
-            </div>
-          </section>
+          </div>
+          <div class="grafica">
+            <canvas id="myChart" class="myChart"></canvas>
+          </div>
         </section>
-      </section>
+      </div>
     </section>
+
     <!--Segunda Pantalla-->
     <div class="divViewHeaderTwo">
       <header class="Filtros">
-        <div class="Ordenar">
-          <select name="selectOption" id="botonOrdenarPor">
+        <div class="Ordenar ">
+          <select class="opciones" name="selectOption" id="botonOrdenarPor">
             <option value="defaultOption" selected>Ordenar por</option>
             <option value="aZOrder">A - Z</option>
             <option value="zAOrder">Z - A</option>
@@ -70,8 +69,8 @@
             <option value="numDes"># DESC - # ASC</option>
           </select>
         </div>
-        <div class="Tipo">
-          <select name="selectTipe" id="botonTipo">
+        <div class="Tipo ">
+          <select name="selectTipe" id="botonTipo" class="opciones">
             <option value="defaultTipe" selected>Tipo</option>
             <option value="steel">Acero</option>
             <option value="water">Agua</option>
@@ -94,7 +93,7 @@
           </select>
         </div>
         <div class="Debilidades">
-          <select name="selectDeb" id="botonDebilidades">
+          <select class="opciones" name="selectDeb" id="botonDebilidades">
             <option value="defaultDeb" selected>Debilidades</option>
             <option value="steel">Acero</option>
             <option value="water">Agua</option>
@@ -116,8 +115,8 @@
             <option value="flying">Volador</option>
           </select>
         </div>
-        <div class="Resistencia">
-          <select name="selectRes" id="botonResistencia">
+        <div class="Resistencia ">
+          <select class="opciones" name="selectRes" id="botonResistencia">
             <option value="defaultRes" selected>Resistencia</option>
             <option value="steel">Acero</option>
             <option value="water">Agua</option>
@@ -139,13 +138,14 @@
             <option value="flying">Volador</option>
           </select>
         </div>
+        <div class="Contenedorvolver">
+          <a href="index.html" class="volver">Volver</a>
+          <button type="button" value="Borrar Filtros" class="refrescar" name="borrar filtros"
+            id="borrarFiltros">Refrescar</button>
+        </div>
       </header>
       <div id="listaPokemon"></div>
       <!-- Mostramos Pokémon en las card -->
-      <section>
-        <a href="index.html" class="volver">Volver</a>
-        <button type="button" value="Borrar Filtros" class="refrescar" name="borrar filtros" id="borrarFiltros">
-      </section>
     </div>
     <footer class="footer text-white">
       <p>Copyright &copy; 2022 - Daniela Rocha and Paola Quiroga</p>

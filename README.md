@@ -1,4 +1,4 @@
-# Data Lovers - Pokémon Master
+# Data Lovers - Pokémon Máster
 
 # Índice
 
@@ -15,7 +15,8 @@ Nuestro sitio web es una página pensada para los fans de Pokemón, quienes enco
 
 ## Imagen final de la Página Web:
 
-AQUI NO OLVIDAR INSERTARLA
+![Alt text](src/data/pokemon/Imagenes/Final1.png)
+![Alt text](src/data/pokemon/Imagenes/Final2.png)
 
 ***
 
@@ -48,20 +49,18 @@ Mayormente se usaría cuando el usuario desee ver información importante antes 
 ## 3.2 Testeo de Usabilidad
 El testeo se realizó con usuario real y nos aportó algunos puntos que nos ayudaron a mejorar la visual de la página:
 
-* Agregar botones de VOLVER e INICIO.
+* Agregar botones de VOLVER para salir al inicio y elegir la otra región y REFRESCAR PÁGINA por si queria borrar filtros y hacer otros nuevos según lo que deseara ver en el momento.
 * Simplificar la información a mostrar en las cards por cada Pokemon, queríamos incluir mucho, pero nos informó los puntos exactos que deberíamos mostrar para que fuera más efectiva dicha información.
-* La información de descripción por cada Pokémon se podía mostrar en la misma tarjeta.
 * Los filtros a usar.
 
 ## 3.3  Prototipo de alta fidelidad
 
 * Prototipo interactivo Figma: 
-https://www.figma.com/proto/EFCeqo3mXe1ESkwiGB4WnC/Untitled?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2
+https://www.figma.com/proto/EFCeqo3mXe1ESkwiGB4WnC/Untitled?node-id=1%3A2&starting-point-node-id=1%3A2
 
-![Alt text](../../../../../../../../../C:/Users/eprip/OneDrive/Documents/laboratoria-bootcamp/proyectos%20git/DataLovers-Pokemon/DEV002-data-lovers/src/data/pokemon/Imagenes/F1.jpg)
-![Alt text](../../../../../../../../../C:/Users/eprip/OneDrive/Documents/laboratoria-bootcamp/proyectos%20git/DataLovers-Pokemon/DEV002-data-lovers/src/data/pokemon/Imagenes/F2.jpg)
-![Alt text](../../../../../../../../../C:/Users/eprip/OneDrive/Documents/laboratoria-bootcamp/proyectos%20git/DataLovers-Pokemon/DEV002-data-lovers/src/data/pokemon/Imagenes/F3.jpg)
-
+![Alt text](src/data/pokemon/Imagenes/Figma1.jpg)
+![Alt text](src/data/pokemon/Imagenes/Figma2.png)
+![Alt text](src/data/pokemon/Imagenes/Filtros1.png)![Alt text](src/data/pokemon/Imagenes/Filtros2.png)![Alt text](src/data/pokemon/Imagenes/Filtros3.png)![Alt text](src/data/pokemon/Imagenes/Filtros4.png)
 ***
 ## 3.4 Historias de Usuario
 
@@ -87,11 +86,11 @@ Que esté desplegada en Github Pages.<br>
 * Para: Saber cuales Pokémon están disponibles en las Regiones de Kanto y Johto.
 * Criterios de Aceptación:<br>
 Ser responsive<br>
-Mostrar Pokémon enlistados en tarjetas, en columnas de cuatro, con foto, nombre, número de Pokédex y tipo.<br>
+Mostrar Pokémon enlistados en tarjetas, en columnas de cinco, con foto, nombre, número de Pokédex y tipo.<br>
 Que sea Scroll<br>
 Que cumpla con el diseño de alta fidelidad.<br>
 * Definición de Terminado:<br>
-Que se vea la lista de pokémon en tarjetas, en columnas de a 4.<br>
+Que se vea la lista de pokémon en tarjetas, en columnas de a 5.<br>
 Cargar el código al repositorio de Github.<br>
 Cumplir los criterios de aceptación.<br>
 Desplegar en Github Pages.<br>
@@ -122,8 +121,8 @@ Contar con pruebas unitarias.<br>
 * Quiero: Usar los filtros de Resistencia y Debilidad
 * Para: Conocer cada Pokémon según sus resistencias y Debilidades
 * Criterios de Aceptación:<br>
-Que se pueda filtrar por Resistencias y muestre enlistados los pokémon en tarjetas por columnas de a 4.<br>
-Que se pueda filtrar por Debilidades y muestre enlistados los pokémon en tarjetas por columnas de a 4.<br>
+Que se pueda filtrar por Resistencias y muestre enlistados los pokémon en tarjetas por columnas de a 5.<br>
+Que se pueda filtrar por Debilidades y muestre enlistados los pokémon en tarjetas por columnas de a 5.<br>
 Que sea Scroll<br>
 Que sea responsive<br>
 * Definición de Terminado:<br>
@@ -136,27 +135,13 @@ Contar con pruebas unitarias.<br>
 ## Historia Cinco
 
 * Cómo: Fan de Pokémon 
-* Quiero: Ver la descripción de cada Pokémon con su información relevante e importante.
-* Para: Conocer a fondo el detalle del Pokemon y usarlo como información previa a las peleas que pueda tener en el Juego Pokemon Go.
-* Criterios de Aceptación:<br>
-Que se muestre la descripción de cada Pokémon, cuando el usuario se de clic sobre él, adicional muestre datos generales como peso, altura, tipo, generación, sus debilidades, sus resistencias y por último los caramelos que requiere para evolucionar y su evolución. <br>
-Que sea responsive<br>
-* Definición de Terminado:<br>
-Que este creado en el html la section de esta pantalla.<br>
-Que cumpla con los criterios de aceptación.<br>
-Que el README esté completo con el avance que se tiene. <br>
-Contar con pruebas unitarias.<br>
-
-## Historia Seis
-
-* Cómo: Fan de Pokémon 
 * Quiero: Ver alguna estadística que me muestre la cantidad de Pokémon por tipo. 
 * Para: Tener una visión unificada de las cantidades con las que cuenta el sitio web.
 * Criterios de Aceptación:<br>
 Que se muestre la gráfica con la información de cantidad de los Pokemon por tipo que se tienen <br>
 Que sea responsive<br>
 * Definición de Terminado:<br>
-Que esté creada en JS la función para la gráfica a mostrar.
+Que esté creada en el main.js la función para la gráfica a mostrar.
 Que el README esté completo con el avance que se tiene.<br>
 Contar con pruebas unitarias.
 
@@ -165,12 +150,3 @@ Contar con pruebas unitarias.
 * HTML
 * CSS
 * JavaScript
-
-
-
-
-
-
-
-
-
