@@ -1,5 +1,8 @@
 # Data Lovers - Pokémon Máster
 
+[Aqui puedes ver el sitio Oficial](https://pq2505.github.io/DEV002-data-lovers/src/index.html)
+
+
 # Índice
 
 * [1. Definición del Proyecto](#1-definicion-del-proyecto)
@@ -11,7 +14,7 @@
 
 ## 1. Definición del Proyecto
 
-Nuestro sitio web es una página pensada para los fans de Pokemón, quienes encontrarán información de los Pokemon que pueden usar para revisar antes de jugar batallas en el juego Pokemon Go y de esta forma hacer estrategias en sus combates luego de posiblemente ver las debilidades y fortalezas de los Pokémon en la presente Pagina Web; Adicionalmente encuentran información importante en cuanto a datos generales y cantidad de caramelos que requiere el Pokemon para evolucionar que también pueden ayudar en su juego de Pokémon GO.
+Nuestro sitio web es una página pensada para los fans de Pokemón, quienes encontrarán información de los Pokémon que pueden usar para revisar antes de jugar batallas en el juego Pokémon Go y de esta forma hacer estrategias en sus combates luego de posiblemente ver las debilidades y fortalezas de los Pokémon en la presente Pagina Web.
 
 ## Imagen final de la Página Web:
 
@@ -24,7 +27,7 @@ Nuestro sitio web es una página pensada para los fans de Pokemón, quienes enco
 
 ## 2.1 ¿Quiénes son los principales usuarios del producto?
 
-Personas que en algún momento de su vida han escuchado hablar de Pokémon, quienes tal vez vieron alguna vez la serie, o quienes son Fans destacados por jugar Pokemon GO y va para dirigida a todos pues, es una página en la cual van a encontrar desde datos curiosos de la serie, así como también información de cada uno de los Pokémon, bien sea porque está interesado en conocerla por curiosidad o porque va a combatir en el Juego y quiere tener información a la mano para que su batalla sea la ganadora.
+Personas que en algún momento de su vida han escuchado hablar de Pokémon, quienes tal vez vieron alguna vez la serie, o quienes son Fans destacados por jugar Pokémon GO y va dirigida a todos pues es una página en la cual van a encontrar desde datos curiosos de la serie, así como también información de cada uno de los Pokémon, bien sea porque está interesado en conocerla por curiosidad o porque va a combatir en el Juego y quiere tener información a la mano para que su batalla sea la ganadora.
 
 
 ## 2.2 ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
@@ -39,12 +42,12 @@ Se espera visualizar los 251 Pokémon separados por regiones Kanto y Johto, con 
 
 ## 2.4 ¿Cuándo utilizan o utilizarían el producto?
 
-Mayormente se usaría cuando el usuario desee ver información importante antes de sus batallas Pokémon, o para ver basado en el juego quizás la cantidad de caramelos que requiere un Pokémon para evolucionar, o si es que no recuerda las evoluciones de alguno de ellos esto enfocado al Juego de Pokemon GO. También se puede cuando el usuario está en un espacio de descanso u ocio y quiere por curiosidad ver algún dato de estos Pokémon.
+Mayormente se usaría cuando el usuario desee ver información importante antes de sus batallas Pokémon para conocer resistencias y debilidades de cada Pokémon. También se puede cuando el usuario está en un espacio de descanso u ocio y quiere por curiosidad ver algún dato de estos Pokémon.
 
 ***
 ## 3. Diseño UI
 ## 3.1 Prototipo de baja fidelidad
-![Alt text](../../../../../../../../../C:/Users/eprip/OneDrive/Documents/laboratoria-bootcamp/proyectos%20git/DataLovers-Pokemon/DEV002-data-lovers/src/data/pokemon/Imagenes/Prototipo_baja_fidelidad.jpeg)
+![Alt text](src/data/pokemon/Imagenes/Prototipo_baja_fidelidad.jpeg)
 
 ## 3.2 Testeo de Usabilidad
 El testeo se realizó con usuario real y nos aportó algunos puntos que nos ayudaron a mejorar la visual de la página:
@@ -56,7 +59,7 @@ El testeo se realizó con usuario real y nos aportó algunos puntos que nos ayud
 ## 3.3  Prototipo de alta fidelidad
 
 * Prototipo interactivo Figma: 
-https://www.figma.com/proto/EFCeqo3mXe1ESkwiGB4WnC/Untitled?node-id=1%3A2&starting-point-node-id=1%3A2
+[FIGMA](https://www.figma.com/proto/EFCeqo3mXe1ESkwiGB4WnC/Untitled?node-id=1%3A2&starting-point-node-id=1%3A2)
 
 ![Alt text](src/data/pokemon/Imagenes/Figma1.jpg)
 ![Alt text](src/data/pokemon/Imagenes/Figma2.png)
